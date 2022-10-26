@@ -42,7 +42,7 @@ struct ContentView: View {
                     .frame(width: 400, height: 200)
                 Spacer()
                 DatePicker(
-                    "Start Date",ß
+                    "Start Date",
                     selection: $date,
                     displayedComponents: [.date]
                 )
