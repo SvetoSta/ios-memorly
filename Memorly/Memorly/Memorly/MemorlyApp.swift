@@ -11,7 +11,7 @@ import SwiftUI
 struct MemorlyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            M()
         }
     }
 }
