@@ -22,7 +22,7 @@ struct NoteDetailView: View {
                         .frame(width: 300, height: 300, alignment: .center)
                     Spacer()
                 }
-                TextField("Edit me !", text: $note.title)
+                TextField("Adventure Title", text: $note.title)
                     .textSelection(.enabled)
                     .onTapGesture {
                         note.title = ""
