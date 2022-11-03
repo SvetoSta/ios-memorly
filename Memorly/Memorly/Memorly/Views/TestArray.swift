@@ -16,36 +16,65 @@ struct TestArray: View {
     
     var body: some View {
         NavigationView{
-            VStack{
-                NavigationLink(destination: body2.onAppear {outside1()}){
-                    Text("Outside")
-                        .font(.title3)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.white)
-                        .multilineTextAlignment(.center)
-                        .padding(12)
+            VStack(alignment: .center){
+                Image("logo_m")
+                    .resizable()
+                    .frame(width: 250, height: 210, alignment: .center)
+                HStack(alignment: .center){
+                    Spacer()
+                    NavigationLink(destination: body2.onAppear {outside1()}){
+                        VStack {
+                            Image("Outside")
+                                .resizable()
+                                .frame(width: 150, height: 150)
+                                
+                            .padding(12)
+                            Text("Outside")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                                .foregroundColor(Color.white)
+                                .multilineTextAlignment(.center)
+                        }
+                        
+                    }
+                    .background(Color("Buttons"))
+                    .cornerRadius(12)
                     
+                    NavigationLink(destination: body2.onAppear {inside1()}){
+                        
+                        VStack {
+                            Image("Image 1")
+                                .resizable()
+                                .frame(width: 150, height: 150)
+                            .padding(12)
+                            Text("Inside")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                                .foregroundColor(Color.white)
+                                .multilineTextAlignment(.center)
+                        }
+                       
+                    }
+                    .background(Color("Buttons"))
+                    .cornerRadius(12)
+                    Spacer()
+                    Divider()
+                        .opacity(0)
                 }
-                .background(Color("Buttons"))
-                .cornerRadius(12)
-            Spacer()
-                NavigationLink(destination: body2.onAppear {inside1()}){
-                    
-                    Text("Inside")
-                        .font(.title3)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.white)
-                        .multilineTextAlignment(.center)
-                        .padding(12)
-                    
+                
+                .toolbar{
+                    ToolbarItem(placement: .navigationBarTrailing){
+                        NavigationLink(destination: ProfilePage()){
+                            
+                            Label("Settings", systemImage: "gearshape")
+                                .imageScale(.large)
+                            
+                        }
+                        .tint(.black)
+                    }
                 }
-                .background(Color("Buttons"))
-                .cornerRadius(12)
-            Spacer()
-            Divider()
-                    .opacity(0)
+                
             }
-            
             .background(Color("Background"))
         }
         
@@ -54,36 +83,73 @@ struct TestArray: View {
     
     var body2: some View{
         NavigationView{
-            VStack{
-                NavigationLink(destination: Adventure().onAppear {alone1()}){
-                    Text("Alone")
-                        .font(.title3)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.white)
-                        .multilineTextAlignment(.center)
-                        .padding(12)
-                    
+            VStack(alignment: .center){
+                Image("logo_m")
+                    .resizable()
+                    .frame(width: 250, height: 210, alignment: .center)
+                HStack(alignment: .center){
+                    Spacer()
+                    NavigationLink(destination: Adventure().onAppear {alone1()}){
+                        VStack {
+                            Image("Alone")
+                                .resizable()
+                                .frame(width: 150, height: 150)
+                                
+                            .padding(12)
+                            Text("Alone")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                                .foregroundColor(Color.white)
+                                .multilineTextAlignment(.center)
+                        }
+                        
+                    }
+                    .background(Color("Buttons"))
+                    .cornerRadius(12)
+                    Spacer()
+                    NavigationLink(destination: Adventure().onAppear {notalone1()}){
+                        
+                        VStack {
+                            Image("NotAlone")
+                                .resizable()
+                                .frame(width: 150, height: 150)
+
+                            .padding(12)
+                            Text("With Kids")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                                .foregroundColor(Color.white)
+                                .multilineTextAlignment(.center)
+                        }
+                        
+                    }
+                    .background(Color("Buttons"))
+                    .cornerRadius(12)
+                    Spacer()
+                    Divider()
+                        .opacity(0)
                 }
-                .background(Color("Buttons"))
-                .cornerRadius(12)
-            Spacer()
-                NavigationLink(destination: Adventure().onAppear {notalone1()}){
-                    
-                    Text("With Kids")
-                        .font(.title3)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.white)
-                        .multilineTextAlignment(.center)
-                        .padding(12)
-                    
+                .toolbar{
+                    ToolbarItem(placement: .navigationBarTrailing){
+                        NavigationLink(destination: ProfilePage()){
+                            
+                            Label("Settings", systemImage: "gearshape")
+                                .imageScale(.large)
+                            
+                        }
+                        .tint(.black)
+                        
+//                        Button{
+//
+//                        } label: {
+//                            Label("Settings", systemImage: "gearshape")
+//                                .imageScale(.large)
+//                        }
+//                        .tint(.black)
+                    }
                 }
-                .background(Color("Buttons"))
-                .cornerRadius(12)
-            Spacer()
-            Divider()
-                    .opacity(0)
+                
             }
-            
             .background(Color("Background"))
         }
         

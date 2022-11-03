@@ -38,11 +38,13 @@ struct CompleteAdventure: View {
             }
             .toolbar{
                 ToolbarItem(placement: .navigationBarTrailing){
-                    Button{
-                        showImagePicker.toggle()
-                    } label:{
-                        Label("Image", systemImage: "photo.on.rectangle.angled")
+                    NavigationLink(destination: ProfilePage()){
+                        
+                        Label("Settings", systemImage: "gearshape")
+                            .imageScale(.large)
+                        
                     }
+                    .tint(.black)
                 }
                 ToolbarItem(placement: .navigationBarTrailing){
                     Button{

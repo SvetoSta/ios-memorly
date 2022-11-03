@@ -59,6 +59,18 @@ struct Adventure: View {
                Spacer()
                 
             }
+            .toolbar{
+                ToolbarItem(placement: .navigationBarTrailing){
+                    NavigationLink(destination: ProfilePage()){
+                        
+                        Label("Settings", systemImage: "gearshape")
+                            .imageScale(.large)
+                        
+                    }
+                    .tint(.black)
+                }
+            }
+
             
             .background(Color("Background"))
         }
@@ -116,6 +128,18 @@ struct Adventure: View {
                 Spacer()
                
             }
+            .toolbar{
+                ToolbarItem(placement: .navigationBarTrailing){
+                    NavigationLink(destination: ProfilePage()){
+                        
+                        Label("Settings", systemImage: "gearshape")
+                            .imageScale(.large)
+                        
+                    }
+                    .tint(.black)
+                }
+            }
+
             .background(Color("Background"))
         }
         .navigationBarBackButtonHidden(true)

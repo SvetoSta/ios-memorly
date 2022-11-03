@@ -62,11 +62,11 @@ struct M: View {
             }
             .toolbar{
                 ToolbarItem(placement: .navigationBarTrailing){
-                    Button{
-                       
-                    } label: {
+                    NavigationLink(destination: ProfilePage()){
+                        
                         Label("Settings", systemImage: "gearshape")
                             .imageScale(.large)
+                        
                     }
                     .tint(.black)
                 }
