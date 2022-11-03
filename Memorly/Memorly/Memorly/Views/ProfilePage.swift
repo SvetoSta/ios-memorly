@@ -19,6 +19,11 @@ struct ProfilePage: View {
                     .resizable()
                     .frame(width: 250, height: 210, alignment: .center)
                 
+                VStack(alignment: .center) {
+                    Text("Anita")
+                    Text("@GrandmaAnita")
+                }
+                Divider()
                 Spacer()
                 VStack{
                     if imageData.imageNote.isEmpty {
@@ -27,6 +32,7 @@ struct ProfilePage: View {
                             .foregroundColor(.gray)
                     }else{
                         HomeView()
+                            .frame(width: 350, height: 200)
                     }
                 }
                 .background(Color("Calendar"))

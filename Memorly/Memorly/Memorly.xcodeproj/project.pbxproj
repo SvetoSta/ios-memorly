@@ -47,6 +47,8 @@
 		5190F13529142BB3008D5731 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		9DB54B932914230900FE3A4C /* CompleteAdventure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteAdventure.swift; sourceTree = "<group>"; };
 		9DB54B97291430CC00FE3A4C /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
+		9DB54B9B2914496700FE3A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9DB54B9C2914499000FE3A4C /* Quicksand-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		9DBD69D92912872400476E03 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		9DBD69DD2912878000476E03 /* ImageDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataModel.swift; sourceTree = "<group>"; };
 		9DBD69E0291287B100476E03 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9DB54B99291447A200FE3A4C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9DB54B9A291447B400FE3A4C /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9DB54B9A291447B400FE3A4C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9DB54B9C2914499000FE3A4C /* Quicksand-VariableFont_wght.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		9DBD69D8291286E600476E03 /* ImagePickerFeature */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +172,8 @@
 		9DE4CBEB29095B940049F50A /* Memorly */ = {
 			isa = PBXGroup;
 			children = (
+				9DB54B9B2914496700FE3A4C /* Info.plist */,
+				9DB54B99291447A200FE3A4C /* Resources */,
 				9DE4CBEC29095B940049F50A /* MemorlyApp.swift */,
 				9DBD69DF2912878B00476E03 /* Views */,
 				9DBD69DB2912876C00476E03 /* ImageData */,
@@ -492,6 +512,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Memorly/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Memorly/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Memorly;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -522,6 +543,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Memorly/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Memorly/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Memorly;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
