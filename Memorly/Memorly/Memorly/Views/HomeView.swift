@@ -25,7 +25,9 @@ struct HomeView: View {
                     }
                 }
             }
+            .listRowBackground(Color("BarColor"))
         }
+        .scrollContentBackground(.hidden)
     }
 }
 

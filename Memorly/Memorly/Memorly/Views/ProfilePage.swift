@@ -55,6 +55,7 @@ struct ProfilePage: View {
             
             .background(Color("Background"))
         }
+        .environmentObject(imageData)
     }
 }
 
