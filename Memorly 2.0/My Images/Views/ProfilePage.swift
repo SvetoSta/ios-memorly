@@ -29,9 +29,8 @@ struct ProfilePage: View {
                 Spacer()
                 
                 VStack {
-                    if !vm.isEditing {
                         imageScroll
-                    }
+                    
                     
                     VStack {
                         if vm.image != nil {
@@ -43,6 +42,11 @@ struct ProfilePage: View {
                     }
                     .padding()
                     Spacer()
+                }
+                .task {
+                    if FileManager().docExist(named: fileName) {
+                        vm.loadMyImagesJSONFile()
+                    }
                 }
                 
                 HStack(alignment: .center){

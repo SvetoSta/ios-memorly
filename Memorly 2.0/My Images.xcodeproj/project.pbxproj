@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5186C73C2914F65B0071B003 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5186C73B2914F65B0071B003 /* Launch Screen.storyboard */; };
 		9DB54BA129144FDA00FE3A4C /* TestArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB54B9D29144FDA00FE3A4C /* TestArray.swift */; };
 		9DB54BA229144FDA00FE3A4C /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB54B9E29144FDA00FE3A4C /* ProfilePage.swift */; };
 		9DB54BA329144FDA00FE3A4C /* M.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB54B9F29144FDA00FE3A4C /* M.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5186C73B2914F65B0071B003 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../../../Memorly/Memorly/Memorly/Views/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		9DB54B9D29144FDA00FE3A4C /* TestArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestArray.swift; sourceTree = "<group>"; };
 		9DB54B9E29144FDA00FE3A4C /* ProfilePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
 		9DB54B9F29144FDA00FE3A4C /* M.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = M.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				9DB54B9E29144FDA00FE3A4C /* ProfilePage.swift */,
 				9DB54B9D29144FDA00FE3A4C /* TestArray.swift */,
 				BBB4F88326CDA63700E762C4 /* ContentView+Extension.swift */,
+				5186C73B2914F65B0071B003 /* Launch Screen.storyboard */,
 				9DC3BFA32914712200EAA9B8 /* ProfilePage+Extension.swift */,
 				BBD687B926CC74AD00B26DC9 /* ButtonLabel.swift */,
 			);
@@ -209,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5186C73C2914F65B0071B003 /* Launch Screen.storyboard in Resources */,
 				BB39286426C0C9D4005B735F /* Preview Assets.xcassets in Resources */,
 				BB39286126C0C9D4005B735F /* Assets.xcassets in Resources */,
 			);
@@ -367,22 +371,24 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"My Images/Preview Content\"";
-				DEVELOPMENT_TEAM = RKV4UP49S6;
+				DEVELOPMENT_TEAM = Q3836UJ9SS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "My-Images-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Memorly;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Would like to use the camera to take photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.createchsol.My-Images";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.duo-app.Memorly";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -398,22 +404,24 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"My Images/Preview Content\"";
-				DEVELOPMENT_TEAM = RKV4UP49S6;
+				DEVELOPMENT_TEAM = Q3836UJ9SS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "My-Images-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Memorly;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Would like to use the camera to take photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.createchsol.My-Images";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.duo-app.Memorly";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

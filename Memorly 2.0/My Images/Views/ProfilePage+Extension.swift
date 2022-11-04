@@ -56,6 +56,11 @@ extension ProfilePage {
             }
             .focused($nameField, equals: true)
             .textFieldStyle(.roundedBorder)
+            TextField("Enter Description", text: $vm.imageDesc) { isEditing in
+                vm.isEditing = isEditing
+            }
+            .focused($nameField, equals: true)
+            .textFieldStyle(.roundedBorder)
             HStack {
                 Button {
                     if vm.selectedImage == nil {
