@@ -22,7 +22,7 @@ struct M: View {
                 .padding(5)
                 Text("Today the weather outside is sunny and the")
                     .padding(5)
-                Text("temperature is ##°C.")
+                Text("temperature is 10°C.")
                     .padding(5)
                 Text(" Perfect for an activity outisde.")
                     .padding(1)
